@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product design</title>
+    <style>
+        body{
+            background-color: #9eb6b2;
+        }
+        #main-product-image{
+            width: 400px;
+            height: 400px;
+            
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+            margin: 20px auto;
+            margin-left: 40px;
+            
+        } 
+        .product-image{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+
+        }
+        .details{
+            margin-left: 500px;
+            margin-top: -500px;
+        }
+        .btn{
+            height: 40px;
+            width: 150px;
+            background-color: black;
+            color: beige;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+  <img src="watch1.jpg" id="main-product-image"/> 
+  <div class="product-images-container">
+     <img src="watch1.jpg" class="product-image" onclick="changeImage('watch1.jpg')"/>
+     <img src="watch2.jpg" class="product-image" onclick="changeImage('watch2.jpg')"/>
+     <img src="watch3.jpg" class="product-image" onclick="changeImage('watch3.jpg')"/>
+     <img src="watch4.jpg" class="product-image" onclick="changeImage('watch4.jpg')"/>
+     <img src="watch5.jpg" class="product-image" onclick="changeImage('watch5.jpg')"/>
+  </div> 
+  
+  <div class="details">
+    <h1>OLEVS </h1>
+  <h2 >Product details<hr></h2>
+  <h3>
+    Is Discontinued By Manufacturer ‏ : ‎ No<br/>
+Product Dimensions ‏ : ‎ 17 x 0.6 x 3 cm; 100 g<br/>
+Date First Available ‏ : ‎ 6 July 2023<br/>
+Manufacturer ‏ : ‎ OLEVS Watch Co.<br/>
+ASIN ‏ : ‎ B0CB92RZRB<br/>
+Item model number ‏ : ‎ 288<br/>
+Country of Origin ‏ : ‎ Hong Kong<br/>
+Manufacturer ‏ : ‎ OLEVS Watch Co.<br/>
+Item Weight ‏ : ‎ 100 g<br/>
+Item Dimensions LxWxH ‏ : ‎ 17 x 0.6 x 3 Centimeters<br/>
+Net Quantity ‏ : ‎ 1.00 Piece<br/>
+Best Sellers Rank: #2,214 in Watches (See Top 100 in Watches)<br/>
+#1,143 in Men's Wrist Watches</h3>
+<button class="btn">ADD TO CART</button>
+</div>
+  <script>
+    function changeImage(imageName){
+       const mainImage = document.getElementById('main-product-image');
+      mainImage.src=imageName; 
+} 
+  </script>
+</body>
+</html>
